@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -6,7 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 
-export class AppComponent {
+export class AppComponent implements OnInit {
+  currentRoute = '';
+
+  constructor(public router: Router){}
+
+  ngOnInit(){
+    this.currentRoute = this.router.url;
+    console.log(this.router.url);
+  }
 
 }
 

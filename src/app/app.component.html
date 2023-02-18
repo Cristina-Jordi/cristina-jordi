@@ -1,2 +1,4 @@
-<app-nav></app-nav>
+<app-nav [darkMode]="router.url !== '/'"></app-nav>
+<div [class.container]="router.url !=='/'">
 <router-outlet></router-outlet>
+</div>
