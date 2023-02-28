@@ -18,7 +18,8 @@ import { DataProtectionComponent } from './data-protection/data-protection.compo
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
